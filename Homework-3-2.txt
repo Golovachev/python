@@ -1,10 +1,6 @@
 def translate(name):
- 
-    #
     transtable = (
-        # Большие буквы
         (u"Щ", u"SCH"),
-        # two-symbol
         (u"Ё", u"Yo"),
         (u"Ё", u"YO"),
         (u"Ж", u"Zh"),
@@ -21,7 +17,6 @@ def translate(name):
         (u"Ю", u"YU"),
         (u"Я", u"Ya"),
         (u"Я", u"YA"),
-        # one-symbol
         (u"А", u"A"),
         (u"Б", u"B"),
         (u"В", u"V"),
@@ -46,10 +41,7 @@ def translate(name):
         (u"Э", u"E"),
         (u"Ъ", u"`"),
         (u"Ь", u"'"),
-        ## Маленькие буквы
-        # three-symbols
         (u"щ", u"sch"),
-        # two-symbols
         (u"ё", u"yo"),
         (u"ж", u"zh"),
         (u"ц", u"ts"),
@@ -58,7 +50,6 @@ def translate(name):
         (u"ы", u"yi"),
         (u"ю", u"yu"),
         (u"я", u"ya"),
-        # one-symbol
         (u"а", u"a"),
         (u"б", u"b"),
         (u"в", u"v"),
@@ -84,8 +75,6 @@ def translate(name):
         (u"ь", u"'"),
         (u"ъ", u"'"),
     )
-    #перебираем символы в таблице и заменяем
-    for symb_in, symb_out in transtable:
+    for symb_in, symb_out in transtable: #перебираем символы в таблице и заменяем
         name = name.replace(symb_in, symb_out)
-    #возвращаем переменную
-    return name
+    return name #возвращаем переменную (name)
